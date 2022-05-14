@@ -4,15 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App</title>
+    <title>QuizApp</title>
+    <link rel="stylesheet" href="./assests/styles.css">
 </head>
 <body>
-
     <div class="container">
-        <div id="quiz"></div>
-        <button id="submit">Submit Quiz</button>
-         <div id="results"></div>
+        <div class="quiz-box">
+            <div id="quiz">
+                <h1>Javascript QuizApp</h1>
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+               
+            </div>
+
+            <div class="buttons">
+                <button class="btn" id="btn-0">
+                    A. <span id="choice0"></span>
+                </button>
+
+                <button class="btn" id="btn-1">
+                    B. <span id="choice1"></span>
+                </button>
+
+                <button class="btn" id="btn-2">
+                    C. <span id="choice2"></span>
+                </button>
+ 
+                <button class="btn" id="btn-3">
+                    D. <span id="choice3"></span>
+                </button>
+            </div>
+
+            <hr>
+
+            <footer>
+                <input type="text">
+                <p id="progress">Question x 0f y</p>
+            </footer>
+        </div>
     </div>
-    
 </body>
 </html>
