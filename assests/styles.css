@@ -51,10 +51,32 @@
     border: 1px solid #343a40;
     user-select: none;
 }
-.quiz_box header .time_line{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    height: 3px;
-    background: #007bff;
+
+.quiz-box #questions{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: black;
+   
+    padding-top: 18px;
+    outline: none;
+}
+.buttons{
+    margin: 1.5rem 0 4rem 0;
+}
+.btn{
+    text-align: left;
+    background-color: azure;
+    width: 95%;
+    font-size: 1.4rem;
+    color: grey;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 1rem;
+    outline: none;
+    border: 1px solid grey;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
 }
