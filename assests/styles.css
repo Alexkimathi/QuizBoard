@@ -21,9 +21,11 @@
     border-radius: 5%;
     
 }
+
 #quiz{
     display: flex;
     justify-content:space-evenly;
+    padding-bottom: 15px;
 }
 
 .quiz-box h1{
