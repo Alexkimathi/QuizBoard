@@ -1,8 +1,7 @@
-//Quiz class//
-
+//create quiz class
 class Quiz {
     constructor(questions){
-        this.score =0;
+        this.score = 0;
         this.questions = questions;
         this.questionIndex = 0;
     }
@@ -15,7 +14,7 @@ class Quiz {
         if (this.getQuestionIndex().isCorrectAnswer(answer)) {
             this.score++;
         }
-        this.questionIndex++
+        this.questionIndex++;
     }
 
     isEnded() {
@@ -24,3 +23,16 @@ class Quiz {
     }
 }
 
+// question classs//
+
+class Question{
+    constructor(text ,choices,answer){
+        this.text = text;
+        this.choices = choices;
+        this.answer = answer
+
+    }
+    isCorrectAnswer(choice){
+        return this.answer === choice;
+    }
+}
