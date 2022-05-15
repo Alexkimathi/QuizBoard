@@ -11,41 +11,44 @@
     <div class="container">
         <div class="quiz-box">
             <div id="quiz">
-                <h1>Javascript QuizApp</h1>
-                <div class="time_left_txt">Time Left</div>
-                <div class="timer_sec">15</div>
+                <h1>Javascript Quiz App</h1>
+                <div class="quiz-header">
+                    <p id="progress">Question x of y</p>
+                    <div id="count-down">10</div>
+                </div>
                 
-               
+
+                </div>
+                <p id="question">whats your name?</p>
+
+                <div class="buttons">
+                    <button class="btn" id="btn0">A. 
+                        <span id="choice0"></span>
+                    </button>
+
+                    <button class="btn" id="btn1">B. 
+                        <span id="choice1"></span>
+                    </button>
+
+                    <button class="btn" id="btn2">c. 
+                        <span id="choice2"></span>
+                    </button>
+
+                    <button class="btn" id="btn3">D. 
+                        <span id="choice3"></span>
+                    </button>
+                     
+                </div>
+                <hr>
+
+                <footer>
+                    
+                </footer>
             </div>
-
-            <hr>
-            <p id="questions">whats your name?</p>
-
-            <div class="buttons">
-                <button class="btn" id="btn-0">
-                    A. <span id="choice0"></span>
-                </button>
-
-                <button class="btn" id="btn-1">
-                    B. <span id="choice1"></span>
-                </button>
-
-                <button class="btn" id="btn-2">
-                    C. <span id="choice2"></span>
-                </button>
- 
-                <button class="btn" id="btn-3">
-                    D. <span id="choice3"></span>
-                </button>
-            </div>
-
-            <hr>
-
-            <footer>
-                <input type="text">
-                <p id="progress">Question x 0f y</p>
-            </footer>
         </div>
-    </div>
+
+
+    
+    <script src="app.js"></script>
 </body>
 </html>
