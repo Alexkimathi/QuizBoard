@@ -61,3 +61,21 @@ function displayQuestion() {
     }
 }; 
 
+//guess function
+
+function guess(id, guess){
+    let button = document.getElementById(id);
+    button.onclick = function(){
+        quiz.guess(guess);
+        displayQuestion();
+    }
+}
+
+// show quiz progress
+
+function showProgress(){
+    let currentQuestionNumber = quiz.questionIndex + 1;
+    let progressElement = document.getElementById("progress");
+    progressElement.innerHTML = `Question ${currentQuestionNumber} of ${quiz.questions.length}`;
+}
+
