@@ -36,3 +36,28 @@ class Question{
         return this.answer === choice;
     }
 }
+
+//Display Question
+function displayQuestion() {
+    if (quiz.isEnded()) {
+        showScores();
+
+    }else{
+        //show question
+
+        let questionElement = document.getElementById("question");
+        questionElement.innerHTML = quiz.getQuestionIndex().text;
+
+        //show options
+        let choices = quiz.getQuestionIndex().choices;
+        for (let i = 0; i < choices.length; i++){
+            let choiceElement = document.getElementById("choice" + i);
+            choiceElement.innerHTML = choices[i];
+            guess("btn" +i, choices[i]);
+        }
+
+        showProgress();
+
+    }
+}; 
+
