@@ -95,3 +95,43 @@ function showScores(){
     quizElement.innerHTML = quizEndHTML;  
 }
 
+// create quiz questions
+
+let questions = [
+    new Question(
+    "What does HTML stand for?",
+   [
+      "Hyper Text Preprocessor",
+      "Hyper Text Markup Language",
+      "Hyper Text Multiple Language",
+      "Hyper Tool Multi Language"
+    ], "Hyper Text Markup Language",
+
+    ),
+
+    new Question(
+        "Which is a javascript library?",
+       [
+          "React",
+          "Django",
+          "laravel",
+          "php"
+        ], "React",
+    
+        ),
+
+        new Question(
+            "What does css stand for?",
+           [
+              "Hyper Text Preprocessor",
+              "Hyper Text Markup Language",
+              "Cascading Style Sheet",
+              "Hyper Tool Multi Language"
+            ], "Cascading Style Sheet",
+        
+            ),
+];
+let quiz = new  Quiz(questions);
+
+//display questions
+displayQuestion();
