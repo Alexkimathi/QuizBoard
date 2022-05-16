@@ -18,7 +18,10 @@ class Quiz {
     }
 
     isEnded() {
-        return this.questionsIndex === this.questions.length;
+        if(
+        this.questionsIndex === this.questions.length){
+            return true
+        }
 
     }
 }
@@ -41,6 +44,8 @@ class Question{
 function displayQuestion() {
     if (quiz.isEnded()) {
         showScores();
+    console.log('HELLO 3') 
+
 
     }else{
         //show question
@@ -85,14 +90,15 @@ function showScores(){
     let quizEndHTML = 
     `
     <h1>Quiz Completed</h1>
-    <h2> id="score"> you scored: ${quiz.score} of ${quiz.question.length} </h2>
+    <h2> id="scores"> you scored: ${quiz.score} of ${quiz.question.length} </h2>
     <div class = " quiz-repeat">
     <a href="index.html">Take Quiz Again</a>
     
     </div
     `;
     let quizElement = document.getElementById("quiz")
-    quizElement.innerHTML = quizEndHTML;  
+    quizElement.innerHTML = quizEndHTML; 
+    console.log('HELLO 2') 
 }
 
 // create quiz questions
@@ -139,7 +145,7 @@ displayQuestion();
 
 // ADD COUNTDOWN
 
-let time = 5;
+let time = 1;
 let quizTimeInMinutes = time * 60* 60;
 quizTime = quizTimeInMinutes / 60;
 let counting = document.getElementById("count-down");
@@ -148,6 +154,8 @@ function startCountdown(){
     let quizTimer = setInterval(function(){
         if(quizTime <= 0){
             clearInterval(quizTimer);
+    console.log('HELLO') 
+
             showScores();
 
         }else{
