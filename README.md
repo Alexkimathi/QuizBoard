@@ -27,8 +27,7 @@ As a user of the website, You will be able to:
 1. start Quiz
 2. has a timer for the quiz
 3. show the number of the quiz question
-4. see features of the houses
-5. see similar listing
+
 
 [Go Back to the top](# Javascript QuizApp)
 
